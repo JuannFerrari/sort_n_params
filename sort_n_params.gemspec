@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sort_n_params'
-  s.version     = '1.0.2'
+  s.version     = '1.0.3'
   s.date        = '2019-05-07'
   s.summary     = "Sort N Params"
   s.description = "Make your html <tables> sortables with N <th> parameters this gem."
@@ -8,6 +8,10 @@ Gem::Specification.new do |s|
   s.email       = 'juannferrari@gmail.com'
   s.require_paths = ["lib"]
   s.files       = [
+    "Gemfile",
+    "MIT-LICENSE",
+    "Rakefile",
+    "sort_n_params.gemspec",
     "lib/sort_n_params.rb",
     "lib/sort_n_params/sortable.rb",
     "lib/sort_n_params/sort_helpers.rb",

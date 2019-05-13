@@ -1,12 +1,20 @@
 Gem::Specification.new do |s|
   s.name        = 'sort_n_params'
-  s.version     = '1.0.1'
+  s.version     = '1.0.2'
   s.date        = '2019-05-07'
   s.summary     = "Sort N Params"
   s.description = "Make your html <tables> sortables with N <th> parameters this gem."
   s.authors     = ["Juan Francisco Ferrari"]
   s.email       = 'juannferrari@gmail.com'
-  s.files       = ["lib/sort_n_params.rb"]
+  s.require_paths = ["lib"]
+  s.files       = [
+    "lib/sort_n_params.rb",
+    "lib/sort_n_params/sortable.rb",
+    "lib/sort_n_params/sort_helpers.rb",
+    "lib/sort_n_params/concerns/scopes.rb",
+    "spec/spec_helper.rb",
+    "spec/sortable_spec.rb"
+    ]
   s.homepage    =
     'https://github.com/JuannFerrari/sort_n_params'
   s.license       = 'MIT'

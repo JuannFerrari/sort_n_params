@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email       = 'juannferrari@gmail.com'
   s.files       = ["lib/sort_n_params.rb"]
   s.homepage    =
-    'https://rubygems.org/gems/sort_n_params'
+    'https://github.com/JuannFerrari/sort_n_params'
   s.license       = 'MIT'
 
 

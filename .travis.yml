@@ -2,6 +2,7 @@ language: ruby
 rvm:
   - 2.6.1
 script:
+   - gem install bundler:2.0.1
    - bundle update --bundler
    - bundle install - jobs=3 - retry=3
    - bundle exec rake spec

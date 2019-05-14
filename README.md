@@ -4,7 +4,7 @@
 
 ![Alt Text](https://media.giphy.com/media/Q5j4nulD9C1NYbiXF6/giphy.gif)
 
-Sort N Params makes possible to sort your HTML tables by passing multiple params via HTTP's requests.
+Sort N Params makes possible to sort your HTML tables by passing multiple parameters via HTTP's requests.
 
 ## Prerequisites
 
@@ -31,7 +31,7 @@ You need to explicitly add order:[] to the list of permitted parameters, for exa
 @params.permit(:page, order: [])
 ```
 
-For sort your records, add this line:
+To sort your records, add this line:
 ```ruby
 records.sorting_order(order)
 ```
@@ -45,8 +45,8 @@ And that's it!
 
 ## Additional Notes
 
-The helper permits two params, the column thats going to be sorted and a title. 
-Title could be nil, in that case the colum will be titleized.
+The helper only allows two parameters: the column name to be sorted (it has to be in your database) and its title.
+The title may be nil, in which case the column will be titleized.
 
 ## Copyright
 

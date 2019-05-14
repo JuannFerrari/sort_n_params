@@ -9,7 +9,7 @@ class Sortable
   end
 
   def call
-    add_previous_order if @params[:order].present?
+    add_previous_order unless @params[:order].nil?
     @sort_params[:order].include?(@column) ? revert_order : add_order
     build_data
   end

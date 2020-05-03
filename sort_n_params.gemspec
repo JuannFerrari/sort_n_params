@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency "bundler"
   s.add_development_dependency "factory_bot", "~> 4.0"
   s.add_development_dependency "pry-byebug"
-  s.add_development_dependency "rake", "~> 10.0"
+  s.add_development_dependency "rake", ">= 12.3.3"
   s.add_development_dependency "rspec", "~> 3.0"
 
   s.add_dependency(%q<rails>.freeze, ["~> 5.0"])

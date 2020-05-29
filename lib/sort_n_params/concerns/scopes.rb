@@ -4,7 +4,7 @@ module SortNParams
   module Scopes
     extend ActiveSupport::Concern
     class_methods do
-      def sorting_order(ordering_array, table_name)
+      def sorting_order(ordering_array, table_name = nil)
         return all if ordering_array.blank?
 
         all.order(parse_array(ordering_array, table_name))

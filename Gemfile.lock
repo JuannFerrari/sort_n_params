@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    sort_n_params (1.0.3)
+    sort_n_params (1.0.4)
       nokogiri
       rails (~> 5.0)
       rake (>= 12.3.3)
@@ -139,7 +139,7 @@ GEM
       thread_safe (~> 0.1)
     websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
 
 PLATFORMS
   ruby

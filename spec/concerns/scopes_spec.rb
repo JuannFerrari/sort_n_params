@@ -10,7 +10,7 @@ RSpec.describe SortNParams::Scopes do
   context 'when you pass only an ordering array' do
     subject { test_class.parse_array(["test_field","asc"]) }
 
-    it "builds the array correctly with the table_name param passed" do
+    it "builds the array correctly without the table_name param passed" do
       expect(subject).to eq("custom_tables.test_field asc")
     end
   end

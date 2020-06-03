@@ -36,6 +36,11 @@ To sort your records, add this line:
 records.sorting_order(order)
 ```
 
+If your table's name isn't the tableize version of your model you can pass a custom table_name:
+```ruby
+records.sorting_order(order, table_name)
+```
+
 Call the helper on your view:
 ```ruby
 <th><%= sortable 'id', t(:id, scope: :systems) %></th>

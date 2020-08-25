@@ -14,8 +14,17 @@ module SortNParams
         table = table_name || name.tableize
 
         ordering_array.each_slice(2).map do |order, direction|
-          "#{table}.#{order} #{direction}"
+          table_custom, order_custom = get_field_order(table, order)
+          "#{table_custom}.#{order_custom} #{direction}"
         end.join(', ')
+      end
+
+      private
+
+      def get_field_order(table, order)
+        return [table, order] if order.split('.').one?
+
+        order.split('.')
       end
     end
   end

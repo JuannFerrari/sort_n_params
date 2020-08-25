@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/JuannFerrari/sort_n_params.svg?branch=master)](https://travis-ci.org/JuannFerrari/sort_n_params)
 
-![Alt Text](https://media.giphy.com/media/Q5j4nulD9C1NYbiXF6/giphy.gif)
+![Alt Text](https://media.giphy.com/media/Ii4bBTw8tBTESSQOJ7/giphy.gif)
 
 Sort N Params makes possible to sort your HTML tables by passing multiple parameters via HTTP's requests.
 
@@ -17,6 +17,15 @@ Inside your `Gemfile` add the following:
 ```ruby
 gem "sort_n_params"
 ```
+
+Run command to set initializer
+
+```
+rails g sort_n_params:initializer
+```
+
+You can configure icon class (default fontawesome)
+
 
 ## Basic Usage
 
@@ -46,6 +55,12 @@ Call the helper on your view:
 <th><%= sortable 'id', t(:id, scope: :systems) %></th>
 ```
 And that's it!
+
+Now you can filter from another table too, just put `table.column`:
+```ruby
+<th><%= sortable 'categories.name', t(:id, scope: :systems) %></th>
+```
+Remember to do the `joins` or `eager_load` in query or this feature is not work!
 
 
 ## Additional Notes

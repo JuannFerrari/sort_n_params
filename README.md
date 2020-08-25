@@ -24,7 +24,7 @@ Run command to set initializer
 rails g sort_n_params:initializer
 ```
 
-You can configure icon class (default fontawesome)
+You can configure icon class [(default FontAwesome)](https://github.com/bokmann/font-awesome-rails)
 
 
 ## Basic Usage

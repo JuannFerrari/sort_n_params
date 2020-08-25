@@ -1,3 +1,6 @@
+require 'ostruct'
+require 'sort_n_params'
+
 class Sortable
   DEFAULT_ORDER = 'asc'.freeze
 
@@ -21,7 +24,6 @@ class Sortable
 
     build_data
   end
-
 
   private
 

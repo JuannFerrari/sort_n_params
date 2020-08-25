@@ -1,4 +1,5 @@
-require 'pry'
+require 'sort_n_params'
+
 RSpec.describe Sortable do
   subject(:data) { Sortable.new('id', 'code', {}).call }
 
@@ -54,7 +55,7 @@ RSpec.describe Sortable do
     end
 
     it 'returns fa-sort-up class for icon' do
-      expect(already_ordered.icon).to eq 'fa fa-sort-up'
+      expect(already_ordered.icon).to eq SortNParams.sort_asc_class
     end
 
     it 'returns title of passed param' do
@@ -87,7 +88,7 @@ RSpec.describe Sortable do
       end
 
       it 'returns fa-sort-down class for icon' do
-        expect(twice_ordered.icon).to eq 'fa fa-sort-desc'
+        expect(twice_ordered.icon).to eq SortNParams.sort_desc_class
       end
     end
   end

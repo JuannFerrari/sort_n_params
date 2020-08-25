@@ -24,7 +24,7 @@ Run command to set initializer
 rails g sort_n_params:initializer
 ```
 
-You can configure icon class [(default FontAwesome)](https://github.com/bokmann/font-awesome-rails)
+You can configure icon class [(by default FontAwesome)](https://github.com/bokmann/font-awesome-rails)
 
 
 ## Basic Usage
@@ -67,6 +67,10 @@ Remember to do the `joins` or `eager_load` in query or this feature is not work!
 
 The helper only allows two parameters: the column name to be sorted (it has to be in your database) and its title.
 The title may be nil, in which case the column will be titleized.
+
+## Credits
+
+sort_n_params is maintained with the help of these [contributors](https://github.com/JuannFerrari/sort_n_params/graphs/contributors).
 
 ## Copyright
 

@@ -8,7 +8,6 @@ Gem::Specification.new do |s|
   s.email       = 'juannferrari@gmail.com'
   s.require_paths = ['lib']
   s.files = [
-    '.travis.yml',
     'Gemfile',
     'LICENSE',
     'Rakefile',

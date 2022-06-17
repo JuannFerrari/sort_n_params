@@ -1,7 +1,5 @@
 # sort_n_params
 
-[![Build Status](https://travis-ci.org/JuannFerrari/sort_n_params.svg?branch=master)](https://travis-ci.org/JuannFerrari/sort_n_params)
-
 ![Alt Text](https://media.giphy.com/media/Ii4bBTw8tBTESSQOJ7/giphy.gif)
 
 Sort N Params makes possible to sort your HTML tables by passing multiple parameters via HTTP's requests.

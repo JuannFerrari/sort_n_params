@@ -1,7 +1,7 @@
 Gem::Specification.new do |s|
   s.name        = 'sort_n_params'
-  s.version     = '1.1.0'
-  s.date        = '2019-05-07'
+  s.version     = '1.2.0'
+  s.date        = '2022-06-17'
   s.summary     = 'Sort N Params'
   s.description = 'Make your html <tables> sortables with N <th> parameters this gem.'
   s.authors     = ['Juan Francisco Ferrari']
@@ -31,7 +31,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rake', '>= 12.3.3'
   s.add_development_dependency 'rspec', '~> 3.0'
 
-  s.add_dependency('rails'.freeze, ['>= 5.0'])
+  s.add_dependency('rails'.freeze, ['>= 7.0'])
   s.add_dependency('nokogiri'.freeze, ['>= 0'])
   s.add_dependency('rake'.freeze, ['>= 12.3.3'])
 end

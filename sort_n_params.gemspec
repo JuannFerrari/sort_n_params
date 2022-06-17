@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sort_n_params'
-  s.version     = '1.2.1'
+  s.version     = '1.2.2'
   s.date        = '2022-06-17'
   s.summary     = 'Sort N Params'
   s.description = 'Make your html <tables> sortables with N <th> parameters this gem.'
@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
   s.homepage =
     'https://github.com/JuannFerrari/sort_n_params'
   s.license = 'MIT'
+  s.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
 
   s.add_development_dependency 'bundler'
   s.add_development_dependency 'factory_bot', '~> 4.0'

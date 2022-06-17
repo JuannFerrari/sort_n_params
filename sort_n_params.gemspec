@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'sort_n_params'
-  s.version     = '1.2.0'
+  s.version     = '1.2.1'
   s.date        = '2022-06-17'
   s.summary     = 'Sort N Params'
   s.description = 'Make your html <tables> sortables with N <th> parameters this gem.'

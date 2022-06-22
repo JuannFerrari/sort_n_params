@@ -19,7 +19,9 @@ jobs:
     - uses: ruby/setup-ruby@v1
       with:
         bundler-cache: true
-    - run: bundle exec rake
+    - run: |
+        bundle exec rake
+        bundle exec rubocop
 
     - name: Publish to GPR
       run: |

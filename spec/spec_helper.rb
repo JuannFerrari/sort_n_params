@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'factory_bot'
 require 'sort_n_params/sortable'
 

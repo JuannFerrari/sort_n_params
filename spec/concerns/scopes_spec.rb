@@ -4,21 +4,11 @@ require 'sort_n_params/concerns/scopes'
 
 CustomTable = Struct.new(:custom_field) do
   include SortNParams::Scopes
-
-  def self.all; end
 end
 
 RSpec.describe SortNParams::Scopes do
   let(:test_class) do
     CustomTable
-  end
-
-  describe '#sorting_order' do
-    subject { test_class.sorting_order(%w[test_field','asc']) }
-
-    it 'builds the array correctly without the table_name param passed' do
-      expect(subject).to eq('custom_tables.test_field asc')
-    end
   end
 
   describe '#parse_array' do

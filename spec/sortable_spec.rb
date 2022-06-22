@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'sort_n_params'
 
 RSpec.describe Sortable do

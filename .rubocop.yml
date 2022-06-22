@@ -1,0 +1,12 @@
+Gemspec/RequiredRubyVersion:
+  Enabled: false
+
+Metrics/BlockLength:
+  CountComments: false
+  Max: 25
+  Exclude:
+    - spec/**/*
+    - sort_n_params.gemspec
+
+Style/Documentation:
+  Enabled: false

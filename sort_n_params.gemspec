@@ -35,6 +35,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec', '~> 3.0'
   s.add_development_dependency 'rubocop', '~> 1.30'
   s.add_development_dependency 'rubocop-rails'
+  s.add_development_dependency 'sqlite3'
 
   s.add_dependency('nokogiri', ['>= 0'])
   s.add_dependency('rails', ['>= 7.0'])

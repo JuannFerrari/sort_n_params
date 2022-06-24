@@ -9,9 +9,9 @@ module SortNParams
       create_file 'config/initializers/sort_n_params.rb',
                   "# Icons class\nSortNParams.badge_main_class = 'badge badge-pill \
                   badge-primary \ml-1'\nSortNParams.badge_secondary_class = 'badge badge-pill \
-                  badge-secondary ml-1'\nSortNParams.sort_asc_class = 'fas fa-sort-alpha-down \
-                  ml-1'\nSortNParams.sort_desc_class = 'fas fa-sort-alpha-down-alt \
-                  ml-1'\nSortNParams.sort_clear_class = 'fas fa-times'\n"
+                  badge-secondary ml-1'\nSortNParams.sort_asc_class = 'fa-solid fa-arrow-up-wide-short \
+                  ml-1'\nSortNParams.sort_desc_class = 'fa-solid fa-arrow-down-wide-short \
+                  ml-1'\nSortNParams.sort_clear_class = 'fa fa-times'\n"
     end
   end
 end

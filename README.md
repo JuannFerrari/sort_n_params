@@ -16,7 +16,13 @@ Inside your `Gemfile` add the following:
 gem "sort_n_params"
 ```
 
-Run command to set initializer
+Run
+
+```
+bundle install
+```
+
+You can generate an initializer that will set the default icon classes by running:
 
 ```
 rails g sort_n_params:initializer
@@ -32,7 +38,8 @@ In your `application_record.rb` add the following line:
 include SortNParams::Scopes
 ```
 
-You need to explicitly add order:[] to the list of permitted parameters, for example:
+This Gem uses the `order` param to determine the sorting order
+For it to work, you need to explicitly add `order:[]` to the list of permitted parameters, for example:
 
 ```ruby
 @params.permit(:page, order: [])
@@ -43,7 +50,7 @@ To sort your records, add this line:
 records.sorting_order(order)
 ```
 
-If your table's name isn't the tableize version of your model you can pass a custom table_name:
+If your table's name isn't the `#table_name` of your model you can pass a custom table_name:
 ```ruby
 records.sorting_order(order, table_name)
 ```
